@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800;900&display=swap');
+
+
+
+@import './node_modules/animate.css/animate.min.css';
+@import './node_modules/bootstrap-icons/font/bootstrap-icons.css';
+
+
+$navbar-nav-link-padding-x: 1.5rem;
+$primary: #027924;
+
+
+$border-radius: 0.5rem;
+$border-radius-lg: 0.75rem;
+
+$btn-font-size: 0.75rem;
+$btn-padding-x: 1rem;
+$btn-padding-y: 0.75rem;
+
+
+$btn-font-size-lg: 1rem;
+$btn-padding-x-lg: 1.75rem;
+$btn-padding-y-lg: 0.75rem;
+
+
+$font-family-sans-serif: 'Montserrat', sans-serif;
+@import './node_modules/bootstrap/scss/bootstrap.scss';
+
+
+.nav-link {
+  transition: transform 0.3s;
+}
+
+
+.brand-icon {
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.site-navbar {
+  &:hover {
+    .brand-icon{
+      transform: rotate(360deg);
+    }
+
+    .active {
+      transform: translateY(-3px);
+    }
+  }
+}
+
+
+.nav-link.active{
+  color: white !important;
+}
+
+
+.dish {
+  transition: 1.5s;
+}
+
+.dish:hover {
+  transform: rotate(180deg) !important;
+}
+
+.service {
+  text-align: center;
+}
+
+
+.service {
+  svg {
+    fill: $primary;
+  }
+}
+
+.card img{
+  transition: 1s;
+}
+
+.card {
+  &:hover {
+    img {
+      transform: rotate(90deg);
+    }
+
+  &:hover {
+    transform:  translateY(-10px);
+  }
+
+  transition: 0.3s;
+  }
+
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+}
+
+.text-blue {
+  color: blue;
+}
+
+
+.text-purple {
+  color: #9c1de7;
+}
